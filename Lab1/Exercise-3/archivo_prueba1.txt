@@ -1,0 +1,2 @@
+A pesar de lo dicho anteriormente, este archivo no contiene información información relevante. Cabe resaltar que es un archivo que servirá para probar. Este archivo se mantendrá a la vista del usuario.
+Este archivo entonces solo servirá como prueba.

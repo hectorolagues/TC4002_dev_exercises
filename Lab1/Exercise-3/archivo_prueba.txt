@@ -1,0 +1,2 @@
+Este texto sirve como prueba de el ejercicio número 3 para el Lab 1 de la materia Análisis, diseño y construcción de Software.
+Cabe recalcar que el objetivo es contar un número determinado de ocurrencias de la lista de palabras que se ingresó como parámetro.
