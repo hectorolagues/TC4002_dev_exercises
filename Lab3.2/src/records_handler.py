@@ -91,7 +91,7 @@ class RecordsHandler:
         # loop through the rows
         for row in results:
             print(row)
-    
+
     def delete_all(self):
         sqlquery = "DELETE FROM Records"
         try:

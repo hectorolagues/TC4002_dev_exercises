@@ -3,7 +3,8 @@
 # str_to_int("4") -> 4
 # int_to_str(29348) -> "29348"
 
-num_string_arr = ['0','1','2','3','4','5','6','7','8','9']
+num_string_arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+
 
 def int_to_str(number):
   if number < 0:
@@ -28,6 +29,7 @@ def str_to_int(string_number):
       number = number + digit
 
   return number
+
 
 int_test_values = [-1, 0, 1, 5, 12345, 98765, 4116, 6622, 999, 0o15]
 

@@ -3,7 +3,8 @@ import math
 
 # Boundary from Right-BICEP is considered in the test cases
 # Inverse relationship from Right-BICEP is considered in the test cases
-# Error conditions from Right-BICEP is considered in the test cases by using assertions
+# Error conditions from Right-BICEP is considered in the test cases (assert)
+
 
 class TestMathCeil(unittest.TestCase):
     def test_positive_number(self):

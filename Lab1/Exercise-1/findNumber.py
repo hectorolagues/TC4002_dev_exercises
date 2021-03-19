@@ -1,18 +1,14 @@
-##########################################################
-## Master in Computer Science                           ##
-## TC4002 Analysis, Design and Construction of Software ##
-##########################################################
-## Lab 1 - Exercise 1 - Find the number                 ##
-## Command line program that generates a random number  ##
-## between 1 and 30 (including 1 and 30), asks the user ##
-## to guess the number and outputs whether they guessed ##
-## too low, too high, or exactly right.                 ##
-##########################################################
-## Author: Héctor Gabriel Olagues Torres                ##
-## Date: 16/February/2021                               ##
-## Version: 0.1.beta                                    ##
-## Email: A00354877@itesm.mx                            ##
-##########################################################
+# Master in Computer Science
+# TC4002 Analysis, Design and Construction of Software
+# Lab 1 - Exercise 1 - Find the number
+# Command line program that generates a random number
+# between 1 and 30 (including 1 and 30), asks the user
+# to guess the number and outputs whether they guessed
+# too low, too high, or exactly right.
+# Author: Héctor Gabriel Olagues Torres
+# Date: 16/February/2021
+# Version: 0.1.beta
+# Email: A00354877@itesm.mx
 
 # Libraries
 from random import randint
@@ -29,7 +25,7 @@ inputValue = ""
 inputValueInt = 0
 while inputValue != "exit" and inputValueInt != randomNum:
     # Ask the user to guess the number
-    print("\nGuess the number generated randomly. It should be between >= 1 and <= 30.")
+    print("\nGuess the random number. It should be >= 1 and <= 30.")
     inputValue = input("Please type the number: ")
     if inputValue != "exit":
         inputValueInt = int(inputValue)
@@ -52,7 +48,7 @@ while inputValue != "exit" and inputValueInt != randomNum:
 # Print the number of guesses the user has taken
 print("\nNumber of guesses the user has taken: %d" %guesses)
 
-# Store the number of guesses the user has taken in a file named GuessingSteps.txt
+# Store the number of guesses in a file named GuessingSteps.txt
 guessesString = str(guesses)
 file = open("GuessingSteps.txt", "w")
 file.write(guessesString)

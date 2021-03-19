@@ -1,24 +1,21 @@
-##########################################################
-## Master in Computer Science                           ##
-## TC4002 Analysis, Design and Construction of Software ##
-##########################################################
-## Lab 1 - Exercise 3 - FIND WORDS                      ##
-## Program that parses a file given as parameter and    ##
-## counts the number of occurrences for a list of words ##
-## identified in the file. The identification is case   ##
-## sensitive. The program will accept the words to test ##
-## as arguments. English or Spanish.                    ##
-##########################################################
-## Author: Héctor Gabriel Olagues Torres                ##
-## Date: 16/February/2021                               ##
-## Version: 0.1.beta                                    ##
-## Email: A00354877@itesm.mx                            ##
-##########################################################
+# Master in Computer Science
+# TC4002 Analysis, Design and Construction of Software
+# Lab 1 - Exercise 3 - FIND WORDS
+# Program that parses a file given as parameter and
+# counts the number of occurrences for a list of words
+# identified in the file. The identification is case
+# sensitive. The program will accept the words to test
+# as arguments. English or Spanish.
+# Author: Héctor Gabriel Olagues Torres
+# Date: 16/February/2021
+# Version: 0.1.beta
+# Email: A00354877@itesm.mx
+
 
 # Libraries
 from os import path
 
-#Functions
+# Functions
 def countWords(fileContents, words):
     # Create a dictionary to count by word identified
     wordCoundDict = {}
