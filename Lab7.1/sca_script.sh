@@ -12,7 +12,7 @@ git clone https://github.com/hectorolagues/TC4002_dev_exercises.git
 cd TC4002_dev_exercises
 
 # Run the static analysis
-prospector
+prospector --zero-exit
 
 #Provide a report
-prospector --output-format json:./Lab7.1/report.json
+prospector --zero-exit --output-format json:./Lab7.1/report.json
