@@ -35,19 +35,19 @@ def countWords(fileContents, words):
 print("Exercise 3 - COUNT WORDS")
 
 # Input parameter indicating the path and name of the file
-inputString = input("\nPlease type the path and name of the file to be parsed: ")
+input_string = input("\nPlease type the path and name of the file to be parsed: ")
 # Condition to check whether the path exists
-if path.exists(inputString):
+if path.exists(input_string):
     # Open the file, read the contents and close it accordingly
-    file = open(inputString, "r")
-    fileRead = file.read()
+    file = open(input_string, "r")
+    file_read = file.read()
     file.close()
     # Input parameter indicating the words to be counted
-    inputWords = input("\nPlease type the words to be counted, separated by a space:\n")
-    inputWordsList = inputWords.split()
+    input_words = input("\nPlease type the words to be counted, separated by a space:\n")
+    input_words_list = input_words.split()
     # Call the function that actually counts the words
-    countResult = countWords(fileRead, inputWordsList)
-    print(countResult)
+    count_result = countWords(file_read, input_words_list)
+    print(count_result)
 else:
     # The path or the file are incorrect
     print("\nThe path and/or name of the file does not exist")

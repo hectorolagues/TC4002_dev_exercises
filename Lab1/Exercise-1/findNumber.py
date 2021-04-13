@@ -19,26 +19,26 @@ print("Exercise 1 - Find the number")
 guesses = 0
 
 # Generate random number between 1 and 30
-randomNum = randint(1, 30)
+random_num = randint(1, 30)
 
-inputValue = ""
-inputValueInt = 0
-while inputValue != "exit" and inputValueInt != randomNum:
+input_value = ""
+input_value_int = 0
+while input_value != "exit" and input_value_int != random_num:
     # Ask the user to guess the number
     print("\nGuess the random number. It should be >= 1 and <= 30.")
-    inputValue = input("Please type the number: ")
-    if inputValue != "exit":
-        inputValueInt = int(inputValue)
+    input_value = input("Please type the number: ")
+    if input_value != "exit":
+        input_value_int = int(input_value)
         # Check if the number is within the accepted range
-        if inputValueInt < 1:
+        if input_value_int < 1:
             print("\nThe number should be >= 1.")
-        elif inputValueInt > 30:
+        elif input_value_int > 30:
             print("\nThe number should be <= 30.")
         else:
             # Check whether the guess was too low, too high, or exactly right
-            if inputValueInt > randomNum:
+            if input_value_int > random_num:
                 print("\nYour guess was too high")
-            elif inputValueInt < randomNum:
+            elif input_value_int < random_num:
                 print("\nYour guess was too low")
             else:
                 print("\nYour guess was exactly right")
@@ -49,9 +49,9 @@ while inputValue != "exit" and inputValueInt != randomNum:
 print("\nNumber of guesses the user has taken: %d" %guesses)
 
 # Store the number of guesses in a file named GuessingSteps.txt
-guessesString = str(guesses)
+guesses_string = str(guesses)
 file = open("GuessingSteps.txt", "w")
-file.write(guessesString)
+file.write(guesses_string)
 file.close()
 
 input("\nPress type any key to exit")

@@ -50,13 +50,13 @@ for value in test_values:
     # Condition to check whether the input paramter contains only numeric digits
     if value.isdecimal():
         # Only numeric digits
-        inputValue = int(value)
+        input_value = int(value)
         # Print the numbers in Binary and Hexadecimal format
         print("\nInput value parameter in Binary: ")
-        decimalToBinary(inputValue)
+        decimalToBinary(input_value)
         print("\n\nInput value parameter in Hexadecimal: ")
         print("0x", end="")
-        decimalToHex(inputValue)
+        decimalToHex(input_value)
     else:
         # There is one or more digits that are not numeric
         print("\nThe input parameter does not contain only numeric digits")
